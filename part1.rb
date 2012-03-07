@@ -22,3 +22,15 @@ end
 
 puts 5.dollar.in(:euros)
 puts 10.euros.in(:rupees)
+
+
+# b)
+class String
+  def palindrome?
+    string = self.downcase.gsub(/\W/, '');
+    return string == string.reverse;
+  end
+end
+
+puts "foo".palindrome?
+puts "A man, a plan, a canal -- Panama".palindrome?
