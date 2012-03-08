@@ -20,8 +20,10 @@ class Numeric
   end
 end
 
+=begin
 puts 5.dollar.in(:euros)
 puts 10.euros.in(:rupees)
+=end
 
 
 # b)
@@ -32,8 +34,10 @@ class String
   end
 end
 
+=begin
 puts "foo".palindrome?
 puts "A man, a plan, a canal -- Panama".palindrome?
+=end
 
 # c)
 module Enumerable
@@ -46,7 +50,9 @@ module Enumerable
   end
 end
 
+=begin
 puts [1,2,3,2,1].palindrome?
 puts [1,2,3,2,1,3].palindrome?
 ha = {"a" => "b", "c" => "d"}
 puts ha.palindrome?
+=end
